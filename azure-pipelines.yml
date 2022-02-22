@@ -19,7 +19,7 @@ steps:
 - task: DotNetCoreCLI@2
   inputs:
     command: 'build'
-    projects: '*.sln'
+    projects: 'C:\agent\_work\1\s\EmreninProjesi.sln'
     workingDirectory: '/p:PackageLocation = "$(Build.ArtifactStagingDirectory)\\"'
 
 - task: DotNetCoreCLI@2
