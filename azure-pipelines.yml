@@ -16,11 +16,6 @@ steps:
 - script: dotnet build --configuration $(buildConfiguration)
   displayName: 'dotnet build $(buildConfiguration)'
 
-- task: DotNetCoreCLI@2
-  inputs:
-    command: 'build'
-    projects: 'C:\agent\_work\1\s\EmreninProjesi.sln'
-    workingDirectory: '/p:PackageLocation = "$(Build.ArtifactStagingDirectory)\\"'
 
 - task: DotNetCoreCLI@2
   inputs:
